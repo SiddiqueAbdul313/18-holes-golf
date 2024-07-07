@@ -1,0 +1,33 @@
+.services-container {
+  padding: 20px;
+}
+
+.services-heading,
+.services-description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.learn-more-btn {
+   align-self: center;
+  margin: auto;
+}

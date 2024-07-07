@@ -1,0 +1,98 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(90%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text-overlay .title{
+  font-size: 3vw;
+}
+.text-overlay .description{
+  border: none;
+  outline: none;
+}
+.text-overlay .edit-button{
+  z-index: 3;
+}
+
+.exploreBtn {
+  position: absolute;
+ }
+
+
+/* Media queries for responsiveness */
+@media (width< 768px) {
+  .text-overlay {
+    width: 80%;
+    max-width: 400px;
+  }
+  .overlay {
+    height: 70vh;
+    z-index: 0;
+  }
+  .background-container {
+    max-height: 70vh;
+  }
+  .text-overlay .title {
+    font-size: 4.5vw;
+  }
+  .text-overlay .description {
+    font-size: 2vw;
+  }
+}
+
+@media (width< 480px) {
+  .text-overlay {
+    width: 90%;
+    max-width: 300px;
+  }
+  .text-overlay .title{
+    font-size: 4.5vw;
+    font-weight: 700;
+  }
+  .text-overlay .description{
+    font-size: 3vw;
+  }
+  
+  .exploreBtn {
+    transform: scale(0.6);
+  }
+}

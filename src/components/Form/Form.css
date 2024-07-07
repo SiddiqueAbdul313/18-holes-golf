@@ -1,0 +1,21 @@
+.form-container {
+  margin-top: 20px;
+  margin: auto;
+}
+.form-section {
+  margin: auto;
+  background-color: whitesmoke;
+  position: relative;
+  max-width: 60%;
+  padding: 20px;
+}
+@media (width<600px) {
+  .form-section {
+    max-width: 100%;
+  }
+}
+@media (width>1200px){
+    .form-section {
+        max-width: 60%;
+      } 
+}

@@ -1,0 +1,57 @@
+
+.toolbar {
+  position: relative;
+}
+
+
+@media (min-width: 768px) {
+  .logo {
+    display: flex;
+  }
+}
+
+.toolbar .logo {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 10px;
+}
+@media (width<768px) {
+  .logo {
+    display: none;
+  }
+}
+.logo1 {
+  display: none;
+}
+@media (width<768px) {
+  .logo1 {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-style: oblique;
+    letter-spacing: 0.3rem;
+    color: inherit;
+    text-decoration: none;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+  }
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.membership {
+    color: green;
+}
