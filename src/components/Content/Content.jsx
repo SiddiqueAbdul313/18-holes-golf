@@ -50,7 +50,7 @@ function Content() {
   return (
     <>
       <Box className="background-container" >
-        <img src={bgImg || "https://cdn.pixabay.com/photo/2018/09/18/09/30/golf-3685616_1280.jpg"} alt="background" className="background-image" />
+        <img src={bgImg || "https://images.unsplash.com/photo-1514480573427-1f96cbed6a27?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt="background" className="background-image" />
         <Box className="overlay"></Box>
         <Box className="text-overlay">
           <Box className="edit-button" >
